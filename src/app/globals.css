@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Image {
+  width: auto;
+  height: auto;
+
+}
