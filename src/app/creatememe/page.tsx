@@ -12,7 +12,7 @@ interface Meme {
   url: string;
 }
 
-const creatememe = ({ searchParams }: { searchParams: Meme }) => {
+const CreateMeme = ({ searchParams }: { searchParams: Meme }) => {
   const [generateMemeImage, setGenerateMemeImage] = useState<string | null>(null);
   const [inputTexts, setInputTexts] = useState<{ [key: string]: string }>({});
   const [loading, setLoading] = useState<boolean>(false);
@@ -20,7 +20,7 @@ const creatememe = ({ searchParams }: { searchParams: Meme }) => {
   const handleInutChange = (index: number, value: string) => {
     setInputTexts(prev => ({ ...prev, [`text_${index}`]: value }))
   }
-  console.log(creatememe);
+  console.log(CreateMeme);
 
 
 
@@ -152,4 +152,4 @@ const creatememe = ({ searchParams }: { searchParams: Meme }) => {
   );
 };
 
-export default creatememe;
+export default CreateMeme;
